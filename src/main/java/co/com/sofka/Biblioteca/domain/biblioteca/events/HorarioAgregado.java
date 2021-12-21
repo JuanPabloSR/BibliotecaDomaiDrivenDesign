@@ -11,7 +11,7 @@ public class HorarioAgregado extends DomainEvent {
     private final HoraInicio horaInicio;
     private final HoraFin horaFin;
     public HorarioAgregado(HorarioId entityId, HoraInicio horaInicio, HoraFin horaFin) {
-        super("sofka.bibliotecario.horarioagregado");
+        super("sofka.biblioteca.horarioagregado");
         this.horarioId = entityId;
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;
