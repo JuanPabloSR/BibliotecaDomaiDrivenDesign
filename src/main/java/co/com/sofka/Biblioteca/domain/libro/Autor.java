@@ -1,6 +1,7 @@
 package co.com.sofka.Biblioteca.domain.libro;
 
-import co.com.sofka.Biblioteca.domain.valuesGenerics.AutorId;
+import co.com.sofka.Biblioteca.domain.libro.values.AutorId;
+import co.com.sofka.Biblioteca.domain.valuesGenerics.Edad;
 import co.com.sofka.Biblioteca.domain.valuesGenerics.Nombre;
 import co.com.sofka.domain.generic.Entity;
 

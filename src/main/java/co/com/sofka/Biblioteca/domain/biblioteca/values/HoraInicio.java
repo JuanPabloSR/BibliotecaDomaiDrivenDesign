@@ -1,19 +1,20 @@
-package co.com.sofka.Biblioteca.domain.valuesGenerics;
+package co.com.sofka.Biblioteca.domain.biblioteca.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Nombre implements ValueObject<String> {
+public class HoraInicio implements ValueObject<String> {
     private final String value;
-    public Nombre(String value){
-        this.value= Objects.requireNonNull(value);
-        if(this.value.isBlank()){
-            throw new IllegalArgumentException("El Nombre no puede estar vacio");
+
+    public HoraInicio(String value) {
+        this.value = Objects.requireNonNull(value);
+        if (this.value.isBlank()) {
+            throw new IllegalArgumentException("La hora de inicio no puede estar vacia");
         }
     }
 
-    @Override
+
     public String value() {
         return value;
     }
@@ -22,8 +23,8 @@ public class Nombre implements ValueObject<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Nombre nombre = (Nombre) o;
-        return Objects.equals(value, nombre.value);
+        HoraInicio that = (HoraInicio) o;
+        return Objects.equals(value, that.value);
     }
 
     @Override
