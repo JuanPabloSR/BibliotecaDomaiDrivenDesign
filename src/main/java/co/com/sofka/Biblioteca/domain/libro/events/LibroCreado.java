@@ -1,9 +1,9 @@
 package co.com.sofka.Biblioteca.domain.libro.events;
 
 import co.com.sofka.Biblioteca.domain.libro.values.Titulo;
+import co.com.sofka.Biblioteca.domain.libro.values.Year;
 import co.com.sofka.domain.generic.DomainEvent;
 
-import java.time.Year;
 
 public class LibroCreado extends DomainEvent {
     private final Titulo titulo;

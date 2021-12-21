@@ -12,7 +12,7 @@ public class Categoria extends Entity<CategoriaId> {
         this.categoriaPrincipal = categoriaPrincipal;
     }
     public CategoriaPrincipal categoriaPrincipal() {
-        return CategoriaPrincipal;
+        return categoriaPrincipal;
     }
     public void actualizarCategoriaPrincipal(CategoriaPrincipal categoriaPrincipal) {
         this.categoriaPrincipal = categoriaPrincipal;

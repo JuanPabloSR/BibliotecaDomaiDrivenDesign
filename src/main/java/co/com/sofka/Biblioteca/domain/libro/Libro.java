@@ -5,10 +5,10 @@ import co.com.sofka.Biblioteca.domain.libro.events.CategoriaAgregada;
 import co.com.sofka.Biblioteca.domain.libro.events.LibroCreado;
 import co.com.sofka.Biblioteca.domain.libro.values.*;
 import co.com.sofka.Biblioteca.domain.valuesGenerics.Nombre;
+import co.com.sofka.Biblioteca.domain.libro.values.Year;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 
-import java.time.Year;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -59,13 +59,16 @@ public class Libro extends AggregateEvent<LibroId> {
     }
 
     public Set<Autor> autores() {
+
         return autores;
     }
     public Set<Categoria> categorias() {
+
         return categorias;
     }
 
     public Titulo titulo() {
+
         return titulo;
     }
 
